@@ -1,26 +1,62 @@
 
 .container-dado1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
+    background-color: #966f3b;
+    text-align: center;
+    gap: 1rem;
 }
+
+.div-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 15%;
+    width: 80%;
+    background-color: #ececec;
+    border-radius: 15px;
+
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.div-btn-jogar{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+    width: 80%;
+    background-color: #ececec;
+    border-radius: 15px;
+}
+
+.paragrafo-informativo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
 .btn-mudar-imagem{
-
-    background-color: black;
-    color: aliceblue;
-}
-
-.div-images{
-
-    margin-top: 2rem;
-    background-color: aquamarine;
-    height: 100%;
-    width: 100%;
+    background-color: #cab2b2;
+    border: 0px solid;
+    border-radius: 20px;
 
 }
 
 .imagem{
-
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 250px;
 
 }

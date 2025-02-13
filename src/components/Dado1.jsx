@@ -5,22 +5,22 @@ import './Dado1.css'
 
 function Dado1() {
 
-    const [imagem, setImagem] = useState(0)
+    const [imagem, setImagem] = useState(8)
     const [imagens, setImagens] = useState([
 
-        'public/icons/pessoa1.svg', 
+        './icons/pessoa1.svg', 
         './icons/seta2.svg', 
         './icons/atencao3.svg', 
         './icons/bateria4.svg', 
         './icons/bike5.svg', 
-        'public/icons/maca6.svg', 
-        'public/icons/recarregado7.svg',
-        'public/icons/carro8.svg',
-        'public/icons/duasPessoas9.svg',
-        'public/icons/shopping10.svg',
-        'public/icons/chuva11.svg',
-        'public/icons/coracaoAmor12.svg',
-        'public/icons/presente13.svg'
+        './icons/maca6.svg', 
+        './icons/recarregado7.svg',
+        './icons/carro8.svg',
+        './icons/duasPessoas9.svg',
+        './icons/shopping10.svg',
+        './icons/chuva11.svg',
+        './icons/coracaoAmor12.svg',
+        './icons/presente13.svg'
 
     ])
 
@@ -36,21 +36,17 @@ function Dado1() {
 
     <div className='container-dado1'>
 
-        <h1>StoryMojis</h1>
+        <div className="div-titulo">
+            <h1 className='titulo'>StoryMojis</h1>
+        </div>
 
-        <button onClick={btnMudarImagem} className='btn-mudar-imagem'>
+        <div className="div-btn-jogar">
+            <p className='paragrafo-informativo'>Clica ali na imagem abaixo para começar a história! ↙</p>
+            <button onClick={btnMudarImagem} className='btn-mudar-imagem'>
+                <img className='imagem' src={imagens[imagem]} alt="Alterar-imagem" />  
+            </button>
+        </div>
 
-            <div className='div-images'>
-
-                 <img className='imagem' src={imagens[imagem]} alt="" />
-
-            </div>
-
-        </button>
-
-        
-
-      
     </div>
 
   )
