@@ -8,8 +8,11 @@ function App() {
 
   return (
     <>
-      
+      <div className="div-app">
+
       <Dado1/>   
+
+      </div>
 
     </>
   )

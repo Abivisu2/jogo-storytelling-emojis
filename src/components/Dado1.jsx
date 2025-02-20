@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Dado1.css'
 
 
@@ -9,10 +9,10 @@ function Dado1() {
     const [imagens, setImagens] = useState([
 
         'public/icons/pessoa1.svg', 
-        './icons/seta2.svg', 
-        './icons/atencao3.svg', 
-        './icons/bateria4.svg', 
-        './icons/bike5.svg', 
+        'public/icons/seta2.svg', 
+        'public/icons/atencao3.svg', 
+        'public/icons/bateria4.svg', 
+        'public/icons/bike5.svg', 
         'public/icons/maca6.svg', 
         'public/icons/recarregado7.svg',
         'public/icons/carro8.svg',
@@ -24,11 +24,24 @@ function Dado1() {
 
     ])
 
+     useEffect(() => 
+        console.log(imagens)
+     ,[imagens])
+
     function btnMudarImagem() {
 
-        const numeroAleatorio = Math.floor(Math.random() * imagens.length);
+        if(imagens.length > 0){
 
-        setImagem([[numeroAleatorio]]);
+            const numeroAleatorio = Math.floor(Math.random() * imagens.length);
+    
+            setImagem(numeroAleatorio);
+            // setImagem(imagens[numeroAleatorio]);
+            setImagens(imagens.filter((i) => i != imagens[numeroAleatorio]))
+
+        }else{
+            alert("Acabou a história")
+        }
+
         
     }  
 
@@ -39,18 +52,9 @@ function Dado1() {
         <h1>StoryMojis</h1>
 
         <button onClick={btnMudarImagem} className='btn-mudar-imagem'>
-
-            <div className='div-images'>
-
-                 <img className='imagem' src={imagens[imagem]} alt="" />
-
-            </div>
-
-        </button>
-
-        
-
-      
+            <img className='imagem' src={imagens[imagem]} alt="" />
+        </button>   
+ 
     </div>
 
   )

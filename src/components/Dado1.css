@@ -1,21 +1,13 @@
 
 .container-dado1{
-    height: 100%;
-    width: 100%;
+    height: 80vh;
+    background-color: rgb(218, 129, 129);
+   
 }
 .btn-mudar-imagem{
-
-    background-color: black;
-    color: aliceblue;
-}
-
-.div-images{
-
-    margin-top: 2rem;
-    background-color: aquamarine;
-    height: 100%;
-    width: 100%;
-
+    
+    background-color: white;
+   
 }
 
 .imagem{
