@@ -50,7 +50,7 @@ function Dado1() {
 
     <div className='container-dado1'>
 
-        {/* <h1>StoryMojis</h1> */}
+        <h1 className='titulo-btn'>Clique na imagem para jogar 🎲</h1> 
 
         <button onClick={btnMudarImagem} className='btn-mudar-imagem'>
 

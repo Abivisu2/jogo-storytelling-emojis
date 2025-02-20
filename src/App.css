@@ -11,7 +11,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: rgb(152, 134, 168);
+}
+
+.div-titulo-pagina{
+  margin-bottom: 3rem;
+}
+
+.titulo-pagina{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20;
+  font-weight: 700;
 }
 
 

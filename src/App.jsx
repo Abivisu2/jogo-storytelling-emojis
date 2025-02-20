@@ -9,9 +9,14 @@ function App() {
   return (
     <>
 
+
       <div className="div-app">
 
-      <Dado1/>   
+        <div className="div-titulo-pagina">
+          <h1 className='titulo-pagina'>Jogo que conta uma história aleatória através de emojis 🥳</h1>
+        </div>
+
+        <Dado1/>  
 
       </div>
 
