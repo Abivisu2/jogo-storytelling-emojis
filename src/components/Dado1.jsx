@@ -5,7 +5,7 @@ import './Dado1.css'
 
 function Dado1() {
 
-    const [imagem, setImagem] = useState('public/icons/pessoa1.svg')
+    const [imagem, setImagem] = useState('/icons/pessoa1.svg')
     const [imagens, setImagens] = useState([
 
         'public/icons/pessoa1.svg', 
@@ -35,7 +35,7 @@ function Dado1() {
             const numeroAleatorio = Math.floor(Math.random() * imagens.length);
     
             setImagem(imagens[numeroAleatorio]);
-            
+
             setImagens(imagens.filter((i) => i != imagens[numeroAleatorio]))
             console.log(numeroAleatorio)
 
