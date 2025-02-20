@@ -8,19 +8,19 @@ function Dado1() {
     const [imagem, setImagem] = useState('/icons/pessoa1.svg')
     const [imagens, setImagens] = useState([
 
-        'public/icons/pessoa1.svg', 
-        'public/icons/seta2.svg', 
-        'public/icons/atencao3.svg', 
-        'public/icons/bateria4.svg', 
-        'public/icons/bike5.svg', 
-        'public/icons/maca6.svg', 
-        'public/icons/recarregado7.svg',
-        'public/icons/carro8.svg',
-        'public/icons/duasPessoas9.svg',
-        'public/icons/shopping10.svg',
-        'public/icons/chuva11.svg',
-        'public/icons/coracaoAmor12.svg',
-        'public/icons/presente13.svg'
+        '/icons/pessoa1.svg', 
+        '/icons/seta2.svg', 
+        '/icons/atencao3.svg', 
+        '/icons/bateria4.svg', 
+        '/icons/bike5.svg', 
+        '/icons/maca6.svg', 
+        '/icons/recarregado7.svg',
+        '/icons/carro8.svg',
+        '/icons/duasPessoas9.svg',
+        '/icons/shopping10.svg',
+        '/icons/chuva11.svg',
+        '/icons/coracaoAmor12.svg',
+        '/icons/presente13.svg'
 
     ])
 
