@@ -5,14 +5,14 @@ import './Dado1.css'
 
 function Dado1() {
 
-    const [imagem, setImagem] = useState(8)
+    const [imagem, setImagem] = useState('public/icons/pessoa1.svg')
     const [imagens, setImagens] = useState([
 
         'public/icons/pessoa1.svg', 
-        './icons/seta2.svg', 
-        './icons/atencao3.svg', 
-        './icons/bateria4.svg', 
-        './icons/bike5.svg', 
+        'public/icons/seta2.svg', 
+        'public/icons/atencao3.svg', 
+        'public/icons/bateria4.svg', 
+        'public/icons/bike5.svg', 
         'public/icons/maca6.svg', 
         'public/icons/recarregado7.svg',
         'public/icons/carro8.svg',
@@ -24,9 +24,9 @@ function Dado1() {
 
     ])
 
-     useEffect(() => 
-        console.log(imagens)
-     ,[imagens])
+    //  useEffect(() => 
+    //     console.log(imagens)
+    //  ,[imagens])
 
     function btnMudarImagem() {
 
@@ -34,9 +34,10 @@ function Dado1() {
 
             const numeroAleatorio = Math.floor(Math.random() * imagens.length);
     
-            setImagem(numeroAleatorio);
-            // setImagem(imagens[numeroAleatorio]);
+            setImagem(imagens[numeroAleatorio]);
+            
             setImagens(imagens.filter((i) => i != imagens[numeroAleatorio]))
+            console.log(numeroAleatorio)
 
         }else{
             alert("Acabou a história")
@@ -49,13 +50,13 @@ function Dado1() {
 
     <div className='container-dado1'>
 
-        <h1>StoryMojis</h1>
+        {/* <h1>StoryMojis</h1> */}
 
         <button onClick={btnMudarImagem} className='btn-mudar-imagem'>
 
             <div className='div-images'>
 
-                 <img className='imagem' src={imagens[imagem]} alt="" />
+                 <img className='imagem' src={imagem} alt="" />
 
             </div>
 
